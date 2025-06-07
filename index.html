@@ -336,7 +336,7 @@
             data.timestamp = new Date().toLocaleString('th-TH');
             
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyG_dClGdrT1nOyg_oIdm50PcTA85qawu9oH2X7w0Et7tdlEuVJE7y1HNBlDuvmm7HXwg/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -367,7 +367,7 @@
         
         // Function to update response count
         function updateResponseCount() {
-            fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=getCount')
+            fetch('https://script.google.com/macros/s/AKfycbyG_dClGdrT1nOyg_oIdm50PcTA85qawu9oH2X7w0Et7tdlEuVJE7y1HNBlDuvmm7HXwg/exec?action=getCount')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('responseCount').textContent = data.count;
